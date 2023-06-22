@@ -1,0 +1,35 @@
+
+.rounded {
+
+// Buttons
+		.one,.two, .three {
+			border-radius:3px !important;
+		}
+
+		.icon-post {
+			border-radius:3px !important;
+		}
+
+		.image-column {
+			border-radius:3px;
+				img {
+					border-radius:3px;
+				}
+
+		}
+// Content Blocks
+
+		.content-component {
+			.image-column {
+				border-radius:3px;
+				img {
+					border-radius:3px;
+				}
+			}
+		}
+
+.accordion-label {
+	border-radius:6px;
+}
+
+}

@@ -1,0 +1,12 @@
+.accordion .accordion-label {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E7EDED;
+  padding: 20px;
+  margin-bottom: 5px; }
+
+.accordion .accordion-content {
+  padding: 20px; }
+
+.accordion .accordion-title {
+  padding-bottom: 0; }

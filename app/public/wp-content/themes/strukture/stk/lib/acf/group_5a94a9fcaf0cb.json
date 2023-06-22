@@ -1,0 +1,283 @@
+{
+    "key": "group_5a94a9fcaf0cb",
+    "title": "Options : Footer",
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "is_acf_component": 0,
+    "modified": 1536241500,
+    "fields": [
+        {
+            "key": "field_5a94aa0ecaa33",
+            "label": "Footer Address",
+            "name": "footer_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b74469530120",
+            "label": "Address Link",
+            "name": "footer_address_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a94aa1ecaa34",
+            "label": "Footer Phone Number",
+            "name": "footer_phone_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a94aa2bcaa35",
+            "label": "Footer Fax Number",
+            "name": "footer_fax_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a94aa34caa36",
+            "label": "Footer Email Address",
+            "name": "footer_email_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2292fffcfde",
+            "label": "Hours of operation",
+            "name": "footer_hours_of_operation",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a94aa46caa37",
+            "label": "Footer Social Media",
+            "name": "footer_social_media",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_57100895be550",
+            "min": "",
+            "max": "",
+            "layout": "block",
+            "button_label": "Add Social Media",
+            "appearances": "",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "ID": 0,
+                    "key": "field_571008a1260e2",
+                    "label": "Platform",
+                    "name": "platform",
+                    "prefix": "acf",
+                    "type": "select",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_57100895be550",
+                    "wrapper": {
+                        "width": 30,
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "platform",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "choices": {
+                        "twitter": "Twitter",
+                        "twitter-square": "Twitter Square",
+                        "facebook": "Facebook",
+                        "facebook-official": "Facebook Square",
+                        "pinterest-p": "Pinterest",
+                        "pinterest-square": "Pinterest Square",
+                        "google-plus": "Google Plus",
+                        "google-plus-square": "Google Plus Square",
+                        "instagram": "Instagram",
+                        "flickr": "Flickr",
+                        "linkedin": "LinkedIn",
+                        "linkedin-square": "LinkedIn Square",
+                        "vimeo": "Vimeo",
+                        "vimeo-square": "Vimeo Square",
+                        "youtube": "Youtube",
+                        "youtube-play": "Youtube Play",
+                        "youtube-square": "Youtube Square"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_571008c0260e3",
+                    "label": "Link",
+                    "name": "link",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_57100895be550",
+                    "wrapper": {
+                        "width": 70,
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "link",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5b75796668b07",
+            "label": "Newsletter",
+            "name": "newsletter_headline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b757b7968b08",
+            "label": "Newsletter Content",
+            "name": "newsletter_content",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ]
+}

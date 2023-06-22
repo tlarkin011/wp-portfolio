@@ -1,0 +1,224 @@
+.gallery {
+  
+    
+
+    .gallery-wrapper {
+        position: relative;
+            margin: 0 auto;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slick-next {
+        right: -50px;
+    }
+
+    .slick-prev {
+        left: -50px;
+    }
+
+    .gallery-image {
+        display: flex!important;
+        justify-content: center;
+        max-height: 500px;
+        overflow: hidden;
+        a {
+            width:100%;
+        }
+        img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+           
+        }
+
+    }
+
+    @media #{$below-mobile} {
+
+        .gallery-image, img {
+            max-height: 300px;
+        }
+    }
+}
+
+.slick-thumbnail-grid {
+    max-height: 500px;
+    max-width: 100%!important;
+
+    .gallery-nav-image {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: 155px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            //min-width: 100%;
+        }
+    }
+
+    /* the slides */
+    .slick-slide {
+        margin: 20px 10px;
+    }
+
+    /* the parent */
+    .slick-list {
+        margin: -10px 0;
+    }
+
+    @media #{$below-mobile} {
+        .gallery-nav-image {
+            max-height: 90px;
+        }
+    }
+}
+
+
+
+.fade, .one-time, .single-item, .gallery {
+    display: flex;
+    @include fluid-prop(padding-bottom, 60,20);
+    @include fluid-prop(padding-top, 60, 20);
+
+    
+    .slick-next.slick-arrow,
+    .slick-prev.slick-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 700px;
+            width: 100% !important;
+            object-fit: cover;
+        }
+    }
+
+    i.fa.fa-chevron-circle-right,
+    .fa-chevron-circle-left {
+        @include fluid-prop(height,60, 40);
+        @include fluid-prop(width, 60, 40);
+        background-color: #484963;
+        opacity: .6;
+        transition:all .2s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.gallery {
+    .fa-chevron-circle-right {
+        position: relative;
+        left: -50px;
+        z-index: 100;
+    }
+
+    .fa-chevron-circle-left {
+        position: relative;
+        left: 50px;
+        z-index: 100;
+    }
+
+    .fa-chevron-circle-right:before {
+        content: "\f0da";
+        position: relative;
+        top: 23px;
+        left: 26px;
+        color: $white;
+    }
+
+    .fa-chevron-circle-left:before {
+        content: "\f0d9";
+        position: relative;
+        top: 23px;
+        right: -25px;
+        color: $white;
+    }
+}
+
+.image-slider-wrapper {
+
+   .fa-chevron-circle-right {
+        position: relative;
+        @include fluid-prop(left, -50, -15);
+        z-index: 100;
+    }
+
+    .fa-chevron-circle-left {
+        position: relative;
+        @include fluid-prop(right, -50, -15);
+        z-index: 100;
+    }
+
+    .fa-chevron-circle-right:before {
+        content: "\f0da";
+        position: relative;
+        @include fluid-prop(left,26, 14);
+        @include fluid-prop(top,23, 10);
+        color: $white;
+    }
+
+    .fa-chevron-circle-left:before {
+        content: "\f0d9";
+        position: relative;
+         @include fluid-prop(right,-25, -14);
+        @include fluid-prop(top,23, 10);
+        
+        color: $white;
+    }
+}
+
+
+
+.single-item {
+    position: relative;
+}
+
+ul.slick-dots {
+   list-style:none;
+    position: absolute;
+    display:flex;
+    bottom: 93px;
+    left: 50%;
+    margin-left: -160px;
+    button {
+        height:5px;
+        width:40px;
+        background:white;
+        color:white;
+        max-height:3px;
+        font-size:0px;
+        margin-right:10px;
+        opacity:.6;
+           border:none;
+    }
+    .slick-active {
+        button {
+            opacity: 1;
+            border:none;
+        }
+    }
+}
+.gallery {
+    img.play-logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+}
+}

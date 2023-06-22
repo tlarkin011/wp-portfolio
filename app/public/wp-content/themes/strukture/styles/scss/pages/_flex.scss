@@ -1,0 +1,46 @@
+.page-template-_flex, .single-case_study, .single-service {
+    .strukture-wrapper {
+        padding-top: 0px !important;
+    }
+
+    section,
+    article {
+        margin-bottom: $spacer !important;
+    }
+
+    .featured-testimonials {
+        background: $light-neutral;
+
+        h5 {
+            color: $highlight;
+        }
+    }
+
+    .testimonials {
+        box-shadow: 0 32px 24px 0 rgba(15, 166, 255, 0.1);
+        margin-left: auto !important;
+        @include columns-class(12);
+
+        p {
+
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 29px;
+
+        }
+    }
+
+    .highlights {
+        background:$light-highlight;
+        padding-top:80px;
+        padding-bottom:40px;
+        margin-bottom:40px !important;
+    }
+    .right_content_full_image {
+        background:$light-highlight;
+        padding-top:40px;
+        padding-bottom:40px;
+        margin-bottom:40px !important;
+    }
+}

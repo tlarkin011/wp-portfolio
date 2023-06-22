@@ -1,0 +1,63 @@
+//potentially useful for snapping to grid
+@mixin post-loop-snap() {
+    margin: 0;
+    padding: 0 10px;
+
+    .image-column {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.blog-grid {
+    .block-grid-3 {
+        @include post-loop-snap();
+
+        @media #{$below-tablet} {
+
+          @include block-grid-class(1);
+
+      }
+  }
+}
+
+
+
+
+.loop-item {
+     
+    .image-column {
+        @include background();
+        min-height: 240px;
+        img {
+            min-height: 240px;
+        }
+    }
+}
+
+
+
+.loop-item.search {
+    display: flex;
+    margin-bottom: 50px;
+
+    .image-column {
+        height: 350px;
+        @include background()
+    }
+
+    .content-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include padding-left(30, 10);
+        .loop-title {
+
+        }
+    }
+}
+
+

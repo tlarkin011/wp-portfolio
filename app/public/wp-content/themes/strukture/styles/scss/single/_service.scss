@@ -1,0 +1,17 @@
+.single-service {
+	.service_content_left {
+		@include fluid-prop(margin-bottom,100,60);
+	}
+	.featured-testimonials {
+		@include fluid-prop(margin-bottom,60,0);
+	}
+	.faq-postings {
+		@include fluid-prop(margin-bottom,120,60);
+	}
+	.background-post-wrapper {
+		@include fluid-prop(margin-bottom, 160,60);
+	}
+	.services_footer_callout {
+		margin-bottom:0px;
+	}
+}

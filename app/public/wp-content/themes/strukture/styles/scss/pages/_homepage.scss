@@ -1,0 +1,160 @@
+/*
+ |----------------------------------------------------------------
+ |  Banner
+ |----------------------------------------------------------------
+ */
+
+
+
+.home {
+    background: $white;
+
+    .page-banner {
+        @include fluid-prop(margin-bottom, 130, 40);
+
+    }
+
+    .strukture-wrapper {
+        padding-top: 0px;
+    }
+
+    .who_we_are_overview {
+        @include fluid-prop(margin-bottom, 40, 40);
+    }
+
+    .blog-post-wrapper {
+        @include fluid-prop(margin-bottom, 90, 40);
+    }
+
+    .how_it_works_intro {
+        margin-bottom: 40px;
+    }
+
+    .how_it_works_highlights {
+        h4 {
+            @include font-size(22, 18);
+        }
+
+        @media #{$above-max-width} {
+            .icon-post:nth-child(2) {
+                position: relative;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .how_we_help_highlights {
+        .icon-post {
+            box-shadow: none !important;
+        }
+        img {
+            height: 60px;
+        }
+    }
+
+
+
+}
+
+
+.featured-case-study-wrapper {
+    @include fluid-prop(margin-top, 90, 40);
+    @include fluid-prop(margin-bottom, 80, 40);
+    background: $grey;
+    padding-bottom: 50px;
+    max-height: 620px;
+
+    .content-column {
+        padding: 80px 0px 0px 30px;
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        h6 {
+            padding-bottom: 20px;
+            color: $white;
+        }
+
+        h2,
+        p {
+            color: $white;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+
+        a {
+            margin-right: 20px;
+        }
+
+        i {
+            margin-left: 5px;
+        }
+
+        .quote-block {
+            position: relative;
+
+            p {
+                font-style: italic;
+                padding-bottom: 10px;
+            }
+
+            h6 {
+                padding-top: 0px;
+            }
+
+            &:after {
+                @include font-awesome-5(900);
+                content: "\f10d";
+                position: absolute;
+                left: 1%;
+                top: -6%;
+                font-size: 72px;
+                color: $light-grey;
+                opacity: .2;
+
+            }
+        }
+    }
+
+
+
+    @media #{$above-tablet} {
+
+        .image-column {
+            max-height: 580px;
+            position: relative;
+            bottom: 40px;
+            z-index: 100;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                background: $highlight;
+                width: 100px;
+                height: 60%;
+                left: -70px;
+                top: 40px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            img {
+
+                width: 100%;
+                z-index: 100;
+            }
+        }
+    }
+}
+
+
+
+
+.how_we_help_highlights {
+    .icon-post {
+        min-width: 240px !important;
+    }
+}

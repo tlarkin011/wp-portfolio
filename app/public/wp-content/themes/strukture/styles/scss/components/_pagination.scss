@@ -1,0 +1,121 @@
+.pagination-container {
+    width: 100%;
+    padding: 30px 0;
+
+
+    .wrapper {
+        a {
+            color: $black;
+        }
+    }
+
+    .pagination-column {
+        padding: 15px 0px;
+        @include padding-left(30,10);
+        @include padding-right(30,10);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .fa-arrow-left {
+            margin-right: 10px;
+        }
+
+        i {
+            color: $highlight;
+            font-size: 16px;
+            margin: 10px 10px;
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+
+        p,
+        a {
+
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: $highlight;
+
+        }
+
+        .prev-disabled,
+        .next-disabled {
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 16px;
+                color: $highlight;
+
+            }
+        }
+
+        .fa-arrow-right {
+            margin-left: 12px;
+            color: $light-highlight;
+        }
+
+        .fa-arrow-left {
+            margin-right: 12px;
+            color: $light-highlight;
+        }
+
+
+        .page-lists {
+            
+            @include padding-left(100,20);
+            @include padding-right(100,20);
+
+          
+            .page-numbers {
+              
+                padding: 3px 10px 4px 10px;
+                margin: 0 6px;
+                height:40px;
+                border-radius: 3px;
+                color: $black;
+            }
+
+              .current {
+                background: $highlight;
+                padding: 3px 10px 4px 10px;
+                margin: 0 6px;
+                height:40px;
+                border-radius: 3px;
+                color: $white;
+            }
+            .dots {
+                background:unset;
+                color:$highlight;
+            }
+            a,
+            span {
+                color: $highlight;
+                font-size: 18px;
+                font-weight: 600;
+
+            }
+
+        }
+    }
+}
+
+@media #{$below-tablet} {
+
+
+.pagination-container .pagination-column {
+    flex-wrap:wrap;
+        justify-content: center;
+
+        .page-lists {
+            padding:0px;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+}
+}

@@ -1,0 +1,35 @@
+/*
+ |----------------------------------------------------------------
+ |  Blog Page
+ |----------------------------------------------------------------
+ */
+.page-template-_blog, .blog, .page-template-_faq, .tax-faq_typ, .page-template-_case {
+	 .filter-section {
+	 	padding:30px 0px;
+	 	.taxonomy-select {
+	 		@include copy();
+	 	}
+	 }
+
+		
+		.filter-section {
+			background:$light-neutral;
+			h6 {
+				color:$highlight;
+				margin-right:0px;
+			}
+
+			.filter-container {
+				padding-bottom:0px;
+
+				.submit-button {
+					min-height:50px;
+					min-width:160px;
+			
+				}
+			}
+
+		}
+	
+}
+

@@ -1,0 +1,127 @@
+
+
+
+/*
+ |----------------------------------------------------------------
+ |  Site Header
+ |----------------------------------------------------------------
+ */
+ body {
+ 
+ }
+ .site-header {
+
+    padding: 25px 0;
+    background: $white;
+
+
+     @media #{$above-tablet} {  width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        box-shadow:0px 10px 30px -20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.site-logo {
+    max-width: 85%;
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Burger Trigger
+ |----------------------------------------------------------------
+ */
+ .fs-menu-trigger {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    
+
+    &:focus {
+        outline: none;
+    }
+
+    @media #{$above-tablet} {
+        display: none !important;
+    }
+}
+
+.fs-burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 35px;
+    position: relative;
+    color: $highlight;
+
+    &:before, &:after {
+        content: "";
+        height: 5px;
+        background: currentColor;
+        opacity: 1;
+        transform: translate(0, 0);
+        transition-duration: 250ms;
+        transition-delay: 250ms;
+        transition-property: transform opacity;
+    }
+
+    .menu-opened & {
+
+        &:before {
+            opacity: 0;
+            transform: translateX(-10px);
+            transition-delay: 0s;
+        }
+
+        &:after {
+            opacity: 0;
+            transform: translateX(10px);
+            transition-delay: 0s;
+        }
+    }
+}
+
+.burger-menu-text {
+    margin-right: 10px;
+    text-transform: uppercase;
+    @include letter-spacing(50);
+    @include font-size(14);
+    color: $highlight;
+    display:none;
+}
+
+.burger-line {
+    position: relative;
+    background: transparent;
+    height: 5px;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 1px;
+        background: currentColor;
+        transform-origin: center;
+        transition-duration: 500ms;
+        transition-delay: 0s;
+        transition-property: transform;
+    }
+
+    .menu-opened & {
+
+        &:before {
+            transform: rotate(45deg);
+            transition-delay: 250ms;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+            transition-delay: 250ms;
+        }
+    }
+}
+

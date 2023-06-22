@@ -1,0 +1,125 @@
+
+// Block Grid setup
+
+.block-grid-2 {
+   justify-content:space-between;
+     width:100%;
+     > * {
+          padding: 0px;
+          margin-bottom: 4%;
+          flex-basis:49%;
+          max-width:49%;
+        }
+}
+
+.block-grid-3 {
+  justify-content:space-between;
+  width:100%;
+     > * {
+          padding: 0px;
+          margin-bottom: 1%;
+          flex-basis:31%;
+          max-width:31%;
+        }
+}
+
+.block-grid-4 {
+   justify-content:normal;
+     width:100%;
+     > * {
+          padding: 0px;
+          margin:1% 1% 2%;
+          flex-basis:21%;
+          max-width:21%;
+        }
+}
+
+.block-grid-5 {
+   justify-content:space-between;
+     width:100%;
+     > * {
+          padding: 0px;
+          flex-basis:19%;
+          max-width:19%;
+        }
+}
+
+
+@media #{$below-max-width} {
+   .block-grid-3 {
+      width:100%;
+      
+      > * {
+        flex-basis:48%;
+        max-width:48%;
+      }
+    }
+
+  .block-grid-4, .block-grid-5 {
+      justify-content:normal;
+      width:100%;
+      > * {
+        flex-basis:31%;
+        max-width:31%;
+        margin-bottom: 20px;
+      }
+    } 
+}
+
+
+
+@media #{$below-desktop} {
+  .block-grid-2 {
+      justify-content:space-evenly;
+
+      width:100%;
+      > * {
+        flex-basis:100%;
+        max-width:100%;
+      }
+    }
+    .block-grid-4 {
+      width:100%;
+      > * {
+        flex-basis:48%;
+        max-width:48%;
+      }
+    }
+}
+
+
+
+@media #{$below-tablet} {
+
+  .block-grid-3 {
+      justify-content:space-evenly;
+      width:100%;
+      > * {
+        padding:0px 10px;
+        flex-basis:100%;
+        max-width:100%;
+      }
+    }
+ .block-grid-5 {
+      justify-content:space-evenly;
+      width:100%;
+      > * {
+        flex-basis:48%;
+        max-width:48%;
+      }
+    }
+     
+}
+
+
+@media #{$below-mobile} {
+     .block-grid-4, .block-grid-5 {
+        justify-content:space-evenly;
+        width:100%;
+        padding:0px 10px;
+      > * {
+        flex-basis:100%;
+        max-width:100%;
+      }
+    }
+}

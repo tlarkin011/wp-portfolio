@@ -1,0 +1,168 @@
+/*
+ |----------------------------------------------------------------
+ |  Banner Structure
+ |----------------------------------------------------------------
+ */
+
+
+.page-banner {
+    background-size: cover;
+    background-position: center;
+    @include overlay-color(rgba(255,255,255,.2));
+    position: relative;
+
+@media #{$above-full-width} {
+    &:before {
+        content:"";
+        background:$light-neutral;
+        width:110%;
+        height:80%;
+        left:-5%;
+        top:0px;
+        z-index: -1;
+        position: absolute;
+    }
+}
+
+
+
+    &:after {
+        z-index:0;
+    }
+
+    .row {
+        @include fluid-prop(padding-top, 145, 60);
+        @include fluid-prop(padding-bottom, 80, 40);
+    }
+
+    .content-container {
+        z-index: 10;
+        @include columns-class(7);
+      
+       
+        h6,
+        p {
+            padding-bottom:0px;
+        }
+        p {
+            font-size:16px;
+            font-weight:bold;
+
+        }
+    }
+
+    @media #{$below-tablet} {
+        .button {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+.home {
+.page-banner {
+
+
+    .row {
+        @include fluid-prop(padding-top, 250, 60);
+        @include fluid-prop(padding-bottom, 250, 90);
+
+         p {
+        padding-bottom:30px;
+    }
+
+
+    }
+
+    &:after {
+        z-index: 0;
+    }
+
+    .content-column {
+        z-index: 10;
+    }
+}
+}
+
+.single-page-banner {
+
+     .row {
+        @include fluid-prop(padding-top, 260, 140);
+        @include fluid-prop(padding-bottom, 100, 40);
+    }
+
+
+    div.content-container {
+        padding-bottom: 0;
+    }
+
+    .post-meta-container {
+        display: flex;
+        justify-content: space-between;
+
+        .post-meta {
+            p {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    h6,
+    h1,
+    p {
+       
+        padding-bottom: 10px;
+    }
+
+    .social-list,
+    .social-share {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .social-share {
+        .subtitle {
+            padding-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+
+    .social-list {
+        @include list-reset;
+
+        li {
+            margin-right: 10px;
+            position: relative;
+            top: 9px;
+
+            i,
+            a {
+                color: $light-highlight;
+                font-size: 27px;
+            }
+        }
+    }
+
+    .columns-12 {
+        padding: 0;
+    }
+}
+
+
+ .search-banner {
+        .page-banner {
+            margin-bottom:60px;
+              @include overlay-color(rgba(255,255,255,.1));
+
+            &:after {
+                z-index:0;
+            }
+            .content-container {
+                z-index: 1;
+            }
+        }
+    }
+
+
+    .single-page-banner div.content-container {
+        @include columns-class(11);
+    }

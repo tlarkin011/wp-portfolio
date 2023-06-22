@@ -1,0 +1,39 @@
+.double-map-wrapper {
+  @include padding-bottom(80);
+}
+
+.map-wrap {
+  width: 100%;
+  display: flex;
+
+  .map-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+     border:$construction-border;
+    > * {
+      flex-basis: 50%;
+    }
+
+    .location-title {
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media #{$below-desktop} {
+
+  .map-wrap {
+    flex-wrap: wrap;
+
+    > div {
+      @include columns-class(12);
+    }
+
+    .map-content {
+      @include columns-class(8);
+    }
+  }
+
+}
+

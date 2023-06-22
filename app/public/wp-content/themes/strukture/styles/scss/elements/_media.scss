@@ -1,0 +1,86 @@
+/*
+ |----------------------------------------------------------------
+ |  Image
+ |----------------------------------------------------------------
+ */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+
+    &.aligncenter {
+        display: block;
+    }
+}
+
+/*
+ |----------------------------------------------------------------
+ |  WP Image classes
+ |----------------------------------------------------------------
+ */
+[class*='wp-image-'] {
+    margin-top: 15px;
+}
+
+.alignleft {
+    float: left;
+    margin-bottom: $gutter * 2;
+    margin-right: $gutter * 2;
+    margin-top: 0;
+}
+
+.alignright {
+    float: right;
+    margin-left: $gutter * 2;
+    margin-bottom: $gutter * 2;
+    margin-top: 0;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wp-caption {
+    display: block;
+    margin: 15px 0 45px;
+    max-width: 100%;
+    position: relative;
+    width: auto !important;
+
+    img {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+.wp-caption-dd, // :(
+.wp-caption-text {
+    padding: 10px 15px !important;
+    background: $highlight;
+    color: white;
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Custom Image Classes
+ |----------------------------------------------------------------
+ */
+
+
+/*
+ |----------------------------------------------------------------
+ |  Video
+ |----------------------------------------------------------------
+ */
+
+
+/*
+ |----------------------------------------------------------------
+ |  Iframe - anvil wraps embedded iframes with .flex-video, so that
+ |  class can be used to style iframes
+ |----------------------------------------------------------------
+ */
+

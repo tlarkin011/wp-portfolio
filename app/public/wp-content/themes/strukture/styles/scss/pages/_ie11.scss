@@ -1,0 +1,180 @@
+.ie11 {
+
+
+    * {
+        min-width: 1px;
+    }
+
+    body {
+        width: 100%;
+
+        > * {
+            min-width: 1px;
+        }
+
+    }
+    html {
+        width:100%;
+    }
+
+    html > * {
+        min-width: 1px;
+    }
+
+    .banner-content-box {
+        width:100%;
+        flex: 1 0 auto;
+        align-self: stretch;
+    }
+
+    select:not([multiple]) {
+        background-image: none;
+        padding-right: 0px;
+    }
+
+    .button {
+        max-width: 300px;
+    }
+
+    .translation_cta, .donate_now_cta {
+        .button {
+            margin: 0 auto;
+        }
+    }
+
+    .item {
+        align-items: flex-start;
+    }
+
+    .row {
+        width:100%;
+
+        > * {
+            width:100%;
+        }
+    }
+
+    .banner-wrapper {
+        width:100%;
+    }
+    .columns-2,
+    .columns-3,
+    .columns-4,
+    .columns-5,
+    .columns-6,
+    .columns-7,
+    .columns-8,
+    .columns-9,
+    .columns-10,
+    .columns-11 {
+
+        flex-basis: 100%;
+        flex: 1 0 auto;
+        min-width: 1px;
+        min-height:1px;
+
+        > * {
+            flex: 1 0 auto;
+            flex-basis: 100%;
+            align-self: stretch;
+        }
+    }
+    p {
+        width:100%;
+    }
+    .block-grid-2,
+    .block-grid-3,
+    .block-grid-4 {
+        width: 100%;
+    }
+
+    .block-grid-2 > *,
+    .block-grid-3 > *,
+    .block-grid-4 > * {
+        flex: 1 0 auto;
+        flex-basis:100%;
+        min-width: 1px;
+    }
+    .block-grid-3 {
+        > * {
+            max-width:30%;
+        }
+    }
+    .accordion-label::after {
+        display: none;
+    }
+
+    .accordion-holder {
+        width: 100%;
+
+        .type {
+            text-align: right;
+        }
+    }
+
+    .compat-object-fit {
+        background-size: cover;
+        background-position: center center;
+
+        img {
+            opacity: 0;
+        }
+    }
+
+    .button {
+        width:240px;
+        padding-top:20px;
+    }
+
+    .read-more {
+        width:110px !important;
+        border:0px solid white !important;
+    }
+    .label {
+        max-width:auto;
+        width:auto;
+    }  select::-ms-expand {
+        display: none;
+    }
+    .compat-object-fit {
+        background-size:cover !important;
+        img {
+            display:none;
+        }
+    }
+    .single-post-cat-list {
+        a, p {
+            width:auto;
+            text-align: left;
+        }
+        .divider {
+            width:20px;
+        }
+    }
+    .get_in_touch_form {
+        height:900px;
+        
+
+        .contact-form-container {
+            .gform_fields {
+
+                .gfield {
+                    flex-basis: 47% !important;
+
+                    &:last-of-type {
+                        flex-basis: 100% !important;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .single-map-wrapper {
+        .content-column {
+            > * {
+                max-height:60px;
+            }
+        }
+    }
+}

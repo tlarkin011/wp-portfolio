@@ -1,0 +1,46 @@
+.image-or-video-row {
+    margin-bottom: $bottom-spacer;
+    padding: 0;
+
+    .callout-container {
+        padding: 0;
+    }
+
+    .image-column {
+        max-height: 420px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: auto;
+            width:auto;
+        }
+    }
+
+    .fancy-box-container {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            font-size: 40px;
+            color: $white;
+        }
+    }
+
+    .description-container {
+        p {
+            padding: 10px 30px;
+            font-size: 12px;
+        }
+    }
+
+    @media #{$below-tablet} {
+        .columns-6 {
+            @include columns-class(12);
+        }
+    }
+
+}

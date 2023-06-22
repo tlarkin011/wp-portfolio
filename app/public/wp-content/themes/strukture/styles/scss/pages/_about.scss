@@ -1,0 +1,28 @@
+.page-template-_about {
+	.strukture-wrapper {
+		padding-top:0px;
+	}
+	.mission_and_vision {
+		@include fluid-prop(margin-bottom, 80, 40);
+		background: $lightest-blue;
+		padding:40px 0px;
+	}
+	.highlights {
+		@include fluid-prop(margin-bottom, 60, 40);
+	}
+	.team_member-slideout {
+		@include fluid-prop(margin-bottom, 80, 40);
+	}
+
+	.team_member-slideout {
+
+		.slideout-item {
+			p,i {
+				color:$maintext;
+			}
+		}
+
+	}
+
+
+}

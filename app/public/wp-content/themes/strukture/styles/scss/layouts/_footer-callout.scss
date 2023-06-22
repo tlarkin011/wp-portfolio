@@ -1,0 +1,127 @@
+/*
+ |----------------------------------------------------------------
+ |  Footer Callout
+ |----------------------------------------------------------------
+ */
+.footer-callout {
+    @include padding-top(50, 30);
+    @include padding-bottom(50, 30);
+}
+.footer_callout {
+    p,h1,h2 {
+            color:$black!important;
+        }
+}
+
+@mixin pre-footer-cta() {
+	padding-top:110px;
+	padding-bottom:110px;
+	text-align: center;
+}
+
+@mixin pre-footer-callouts() {
+	justify-content:space-between;
+	border:$construction-border;
+	@media #{$below-tablet} {
+		flex-direction:column;
+		justify-content:center;
+	}
+	.pre-footer-callout-single {
+		background:$light-grey;
+		max-width: 49.5%;
+		@include padding-top(100, 40);
+	    @include padding-bottom(100, 40);
+	    h2 {
+			color:$highlight;
+			font-weight:400;
+		}
+		p {
+			width:60%;
+		}
+		@media #{$below-tablet} {
+			@include columns-class(12);
+			text-align: center;
+			margin-bottom:20px;
+			p {
+				width:90%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@mixin footer-news-wrapper() {
+	@include fluid-prop(padding-top, 40, 20);
+	@include fluid-prop(padding-bottom, 40, 20);
+	form {
+		display:flex;
+		justify-content: flex-end;
+		ul {
+			.gfield_label {
+				display:none;
+			}
+			.gfield {
+				max-width:48%;
+			}
+		}
+	}
+	.large {
+		border-radius:6px;
+	}
+	.gform_button {
+		@include button-one();
+		position: relative;
+		bottom:9px;
+	}
+	.gform_wrapper {
+		overflow:visible;
+	}
+	.newsletter-signup {
+	    padding-top: 40px;
+	}
+}
+
+.footer-news-wrapper {
+	@include footer-news-wrapper();
+}
+.pre-footer-callouts {
+	@include pre-footer-callouts();
+}
+
+.standard_pre_footer_cta {
+	 
+	max-width:1200px;
+	margin:0 auto;
+	margin-bottom:0px !important;	
+	h6,h2,p {
+		color:$black !important;
+	}
+
+}
+
+@media #{$below-tablet} {
+	.footer-news-wrapper {
+		.flex {
+			.columns-4, .columns-8 {
+				@include columns-class(12);
+			}
+		}
+		form {
+			@include flex-column();
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+		}
+		.news-content-wrapper {
+			text-align: center;
+		}
+		form ul .gfield {
+			max-width:100%;
+		}
+
+
+
+
+
+	}
+}

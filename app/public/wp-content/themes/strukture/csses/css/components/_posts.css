@@ -1,0 +1,10 @@
+.icon-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .icon-post-wrapper img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    border-radius: 50%; }

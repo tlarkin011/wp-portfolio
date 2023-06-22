@@ -1,0 +1,14 @@
+// General Mobile Fix
+
+@mixin mobile-content() {
+
+    .content-column {
+            @media #{$below-desktop} { 
+                justify-content:center;
+                padding:40px 20px !important;
+            }
+            @media #{$below-tablet} {
+                padding:30px 20px 20px 20px!important;
+            }
+    }
+}

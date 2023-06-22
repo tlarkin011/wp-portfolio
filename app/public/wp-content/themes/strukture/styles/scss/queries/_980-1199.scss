@@ -1,0 +1,25 @@
+@media #{$below-max-width} {
+.treatment-block {
+    .columns-11 {
+        margin:0px;
+        @include columns-class(12);
+
+    }
+    .content-column {
+        text-align: left;
+    }
+  
+}
+.page-banner:before {
+	display: none;
+}
+.page-banner {
+        .row {
+            padding-left: 60px;
+        }
+    }
+     .block-grid-2,.block-grid-3,.block-grid-4,.block-grid-5 {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}

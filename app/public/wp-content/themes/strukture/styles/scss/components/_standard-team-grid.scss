@@ -1,0 +1,48 @@
+.standard-team-loop {
+  @include padding-bottom(60);
+
+  .standard-team-member {
+
+    .grid-item {
+      padding: 12px;
+    }
+
+
+    .grid-content {
+        border:$construction-border;
+        padding:20px 0px;
+        
+    }
+    .grid-image {
+      border:$construction-border;
+
+      img {
+        object-fit:cover;
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .team-contact {
+      padding-bottom:20px;
+    }
+  }
+
+  @media #{$below-desktop} {
+
+    .block-grid-4 {
+      @include block-grid-class(2);
+    }
+  }
+
+  @media #{$below-tablet} {
+
+    .block-grid-3,
+    .block-grid-4 {
+      @include block-grid-class(1);
+    }
+
+
+  }
+
+
+}

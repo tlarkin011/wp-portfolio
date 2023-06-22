@@ -1,0 +1,23 @@
+.page-template-_patients {
+	.block_three {
+		@include fluid-prop(margin-bottom, 90, 40);
+	}
+	.registration_intro {
+		@include fluid-prop(margin-bottom, 10, 20);
+	}
+	.icon-post-wrapper {
+		@include fluid-prop(margin-bottom, 90, 40);
+	}
+	.full_width_background_callout {
+		@include fluid-prop(margin-bottom, 90, 40);
+	}
+	.faq-postings {
+		@include fluid-prop(margin-bottom, 0, 0);
+		.row {
+			@include fluid-prop(padding-bottom, 120, 40);
+		}
+	}
+	.faq_intro {
+		@include fluid-prop(margin-bottom, 10, 20);
+	}
+}

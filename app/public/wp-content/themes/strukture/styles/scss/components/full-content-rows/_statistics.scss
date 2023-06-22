@@ -1,0 +1,39 @@
+.statistics-container {
+    @include fluid-prop(padding-bottom, 60,20);
+    @include fluid-prop(padding-top, 60, 20);
+    border:$construction-border;
+    
+    .statistic {
+        text-align: center;
+        border:$construction-border;
+    }
+
+    .banner-content-box {
+         @include fluid-prop(padding-top, 60, 20);
+    }
+    .block-grid-3 {
+        //@include columns-class(8);
+        width: 100%;
+    }
+
+    .content-component {
+        .content-container {
+            text-align: center;
+
+        }
+    }
+
+    @media #{$below-desktop} {
+        .content-component {
+            .content-column {
+                @include columns-class(11);
+            }
+        }
+    }
+
+    @media #{$below-mobile} {
+        .block-grid-3 {
+            @include block-grid-class(1);
+        }
+    }
+}

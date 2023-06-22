@@ -1,0 +1,23 @@
+/*
+ |----------------------------------------------------------------
+ |  Block Quote
+ |----------------------------------------------------------------
+ */
+blockquote {
+    border-left: 5px solid $highlight;
+    padding: 20px 20px 20px 50px;
+    margin: 20px 0 35px;
+
+    p {
+        &:last-of-type:not(:first-of-type) {
+            @include font-size(18, 16);
+            text-transform: uppercase;
+        }
+    }
+
+    cite {
+        display: block;
+        @include font-size(18, 16);
+        text-transform: uppercase;
+    }
+}

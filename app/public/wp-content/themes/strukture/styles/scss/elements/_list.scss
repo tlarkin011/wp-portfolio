@@ -1,0 +1,106 @@
+/*
+ |----------------------------------------------------------------
+ |  Lists
+ |----------------------------------------------------------------
+ */
+
+
+
+ul:not([class]), ul,
+ol:not([class]) {
+    margin: 0 0 25px 10px;
+    list-style: none;
+    padding-left: 25px;
+
+    li {
+        @include copy();
+        color: $highlight;
+        line-height: 24px;
+        position: relative;
+        margin-bottom: 10px;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 500;
+
+
+
+        @media #{$below-tablet} {
+           
+        }
+
+        &:before {
+              color: $highlight;
+            position: absolute;
+            left: -25px;
+        }
+    }
+
+    ul:not([class]),
+    ol:not([class]) {
+        margin: 0 0 25px 10px;
+        list-style: none;
+        padding-left: 25px;
+    }
+}
+
+.standard-list {
+
+
+       margin: 0 0 25px 10px;
+    list-style: none;
+    padding-left: 25px;
+
+    li {
+        @include copy();
+        color: $highlight;
+        line-height: 24px;
+        position: relative;
+        margin-bottom: 10px;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left:20px !important;
+
+
+        @media #{$below-tablet} {
+            margin: 0 auto 10px auto;
+        }
+
+        &:before {
+              color: $highlight;
+            position: absolute;
+            left: 5px;
+           @include font-awesome-5(900);
+        content: "\f054";
+        color: $highlight;
+        @include font-size(14, 12);
+        @include fluid-prop('top', 0, 0);
+    
+ 
+        }
+    }
+}
+ul:not([class]) {
+
+    li:before {
+        @include font-awesome-5(900);
+        content: "\f054";
+        color: $highlight;
+        @include font-size(14, 12);
+        @include fluid-prop('top', 0, 0);
+    
+    }
+}
+
+ol:not([class]) {
+    counter-reset: my-counter;
+
+    li:before {
+        content: counter(my-counter) '.';
+        counter-increment: my-counter;
+        top: 1px;
+         color: $highlight;
+         @include font-size(16, 12);
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,74 @@
+.get_in_touch_form {
+    @include contact-form-inputs(4, 50%);
+    @include fluid-prop(padding-top, 60, 40);
+    @include fluid-prop(padding-bottom, 60, 40);
+    background:$light-neutral;
+    .contact-heading {
+        text-align: center;
+        padding-bottom: 40px;
+
+        h2 {
+            padding: 0px 0px 20px;
+            color:$black;
+        }
+
+        p {
+            padding-bottom: 10px;
+
+        }
+    }
+
+    .subtitle {
+        @include font-size(16, 14);
+        @include fluid-prop(line-height, 18, 15);
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    label {
+        @include copy();
+        @include font-size(14);
+        @include fluid-prop(line-height, 18, 15);
+        text-transform: uppercase;
+        color: $highlight;
+
+        font-weight: bold;
+       
+
+    }
+
+    input,
+    textarea,
+    select {
+        @include copy();
+        border: unset !important;
+        background-color: $white;
+            
+    }
+
+    .gform_button {
+        @include button();
+        @include button-two;
+        background:$highlight !important;
+        margin: 0 auto;
+
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .gform_footer {
+        padding: 20px;
+    }
+}
+
+.font-icon {
+    height: 22px;
+    width: auto;
+    margin-right: 15px;
+    position: relative;
+    top: 2px;
+}

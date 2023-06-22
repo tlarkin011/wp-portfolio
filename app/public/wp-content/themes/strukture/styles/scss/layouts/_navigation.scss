@@ -1,0 +1,297 @@
+
+/*
+ |----------------------------------------------------------------
+ | Breadcrumbs
+ |----------------------------------------------------------------
+ */
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+  
+#breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
+}
+
+
+
+/*
+ |----------------------------------------------------------------
+ |  Navigation Column
+ |----------------------------------------------------------------
+ */
+.navigation-column {
+    position: relative;
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Menu
+ |----------------------------------------------------------------
+ */
+
+
+ #menu-phone-number-mobile {
+    list-style: none;
+    margin:0px;
+ }
+#menu-item-591 {
+    margin-right:40px;
+    a {
+    @include header();
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color:$white;
+}
+}
+ .site-utility {
+    #menu-item-441 {
+       @include header();
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+
+
+    }
+
+    #menu-item-439,#menu-item-440 {
+        a {
+            background:$light-highlight;
+            padding:10px 20px;
+            border-radius:0px;
+            text-transform: uppercase;
+            font-size:12px;
+            font-weight: bold;
+        }
+    }
+ }
+.main-menu {
+    @include list-reset;
+    display: none;
+    justify-content: flex-end;
+
+    > li {
+        margin-bottom: 0;
+
+        + li {
+            margin-left: 25px;
+        }
+
+        > a {
+            color: $black;
+            @include copy();
+            display: block;
+            padding: 10px 0;
+            text-align:center;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 19px;
+
+
+
+            &:hover {
+                 color:$highlight;
+            }
+        }
+    }
+
+    > .current-menu-item > a {
+        border-bottom: 2px solid currentColor;
+    }
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Sub Menu
+ |----------------------------------------------------------------
+ */
+.menu-item-has-children {
+    position: relative;
+
+    .sub-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+
+        a {
+            padding: 5px 10px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center ;
+            color: white;
+            background:$highlight;
+
+            &:hover {
+                color:$highlight ;
+            }
+        }
+    
+}
+
+.mobile-submenu-trigger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    color: $highlight;
+    transition: 250ms;
+    transition-property: transform, background, color;
+    transform-origin: center;
+    transform: rotateX(0deg);
+
+    &.opened {
+        transform: rotateX(180deg);
+    }
+}
+
+/*
+ |----------------------------------------------------------------
+ |  None Mobile Menu
+ |----------------------------------------------------------------
+ */
+@media #{$above-tablet} {
+    .main-menu {
+        display: flex !important;
+        align-items:center;
+    }
+
+    .menu-item-has-children {
+        a {
+            background:unset !important;
+        }
+        > a:after {
+            content: "\f0d7";
+            margin-left: 5px;
+            @include font-awesome;
+            color: $highlight;
+
+        }
+
+        .sub-menu {
+            position: absolute;
+            z-index: 10;
+            min-width: 180px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 50px);
+            transition: 350ms;
+            transition-property: transform, opacity;
+            visibility: hidden;
+            background:$highlight;
+            opacity: 1;
+            box-shadow: 1px 1px 5px rgba(black, .3);
+            a {
+            &:hover {
+                background:$light-highlight;
+            }
+        }
+        }
+
+        &:last-child .sub-menu {
+            right: 0;
+            left: auto;
+            transform: translate(0, 50px);
+        }
+
+        &:hover {
+            .sub-menu {
+                transform: translate(-50%, 0);
+                visibility: visible;
+                opacity: 1;
+
+            }
+
+            &:last-child .sub-menu {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Mobile Menu
+ |----------------------------------------------------------------
+ */
+@media #{$below-tablet} {
+    .main-menu {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        min-width: 100%;
+        z-index:1000;
+        padding-top:20px;
+        padding-bottom:20px;
+        background: $highlight;
+
+        > li {
+            display: block;
+
+            + li {
+                margin-left: 0;
+            }
+
+            > a {
+            
+                font-size:22px;
+                line-height:28px;
+                background: $highlight;
+                color: $white;
+                padding: 10px 15px;
+
+                &:hover {
+                    background: darken($highlight, 10%);
+                }
+            }
+        }
+
+        > .current-menu-item > a {
+            border-bottom: none;
+        }
+    }
+
+    .menu-item-has-children {
+        > a {
+            display: flex !important;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .sub-menu {
+            display: none;
+
+            a {
+                padding-left: 35px;
+            }
+        }
+    }
+
+    .mobile-submenu-trigger {
+        display: flex;
+    }
+}
+@media #{$above-tablet} {
+#menu-item-661 { 
+    a {
+         @include button-one();
+         padding:20px 50px;
+       
+        
+    }
+   }
+}

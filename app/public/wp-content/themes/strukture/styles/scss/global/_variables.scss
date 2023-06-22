@@ -1,0 +1,67 @@
+/**
+ *  Colors
+================================================= */
+$black      : #232323;
+$white      : #ffffff;
+$grey       : #58585A;
+$light-grey : #ededed;
+$med-grey 	: #5C6068;
+$green 		: #045D63;
+$light-green : #239CA4;
+$lightest-blue : #EEF9FF;
+$blue  :  #0FA6FF;
+$dark-blue : #0C465B;
+$darkest-blue : #063B4F;
+$background : #EAF2F5;
+/**
+ *  Text COlor
+================================================= */
+$maintext  : $black;
+$highlight : $blue;
+$light-highlight : $lightest-blue;
+$border    : $light-grey;
+$link-color : $blue;
+$sub-header : $green;
+$light-neutral : $lightest-blue;
+
+/**
+ *  Text Sylte
+================================================= */
+$normal : 400;
+$medium : 500;
+$semi   : 600;
+$bold   : 700;
+
+/**
+ *  Grid Settings
+================================================= */
+$max-screen  : 1600px;
+$max-width   : 1200px;
+$columns     : 12;
+$block-grids : 4;
+$gutter      : 10px;
+$spacer		: 80px;
+/**
+ Animation
+*/
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+
+/**
+ *  Media Query
+================================================= */
+$below-max-screen : unquote("screen and (max-width:1799px)");
+$below-max-width  : unquote("screen and (max-width:1199px)");
+$below-desktop    : unquote("screen and (max-width:979px)");
+$below-tablet     : unquote("screen and (max-width:767px)");
+$below-mini       : unquote("screen and (max-width:639px)");
+$below-mobile     : unquote("screen and (max-width:480px)");  // including 480 for perfect content
+
+$above-full-width  : unquote("screen and (min-width:1700px)");
+$above-max-width  : unquote("screen and (min-width:1200px)");
+$above-desktop    : unquote("screen and (min-width:980px)");
+$above-tablet     : unquote("screen and (min-width:768px)");
+$above-mini       : unquote("screen and (min-width:640px)");
+$above-mobile     : unquote("screen and (min-width:480px)");

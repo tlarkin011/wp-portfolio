@@ -1,0 +1,23 @@
+.page-template-_services {
+	.background-post-wrapper {
+		@include fluid-prop(margin-bottom, 160,60);
+	}
+
+	.blog-post-loop {
+		.loop-content:nth-child(odd) {
+			padding:20px 20px 0px;
+			background:$background;
+
+
+			
+		}
+		.image-column {
+				&:hover {
+					box-shadow: none !important;
+					bottom:0px !important;
+				}
+			}	
+	}
+
+}
+

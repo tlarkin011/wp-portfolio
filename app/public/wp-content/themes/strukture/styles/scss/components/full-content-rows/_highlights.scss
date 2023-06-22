@@ -1,0 +1,80 @@
+.employment_highlights_headline  {
+    margin-bottom:40px;
+}
+
+
+.page-template-_careers {
+    .highlights {
+        .image-column {
+            img {
+                   border-radius: 50% !important;
+
+            }
+        }
+    }
+}
+.highlights {
+
+   
+
+
+    .highlights-grid {
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    article {
+        margin-bottom: 60px;
+    }
+    .row {
+        justify-content:center; 
+    }
+    .loop-object {
+
+        width:100%;
+    }
+    .image-column {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: 150px;
+            width: 150px;   
+            box-shadow: none !important;
+
+        
+         
+
+        }
+    }
+
+    @media #{$below-desktop} {
+        .loop-object {
+            max-width:100%;
+        }
+        .highlights-grid {
+            @include block-grid-class(1);
+            @include columns-class(10);
+            justify-content: center;
+        }
+
+    }
+
+    @media #{$below-tablet} {
+
+        .content-column,
+        .image-column {
+            @include columns-class(12);
+            text-align: center;
+        }
+         .highlights-grid {
+   
+            @include columns-class(12);
+   
+        }
+        .image-column {
+            padding-bottom: 20px;
+        }
+    }
+}

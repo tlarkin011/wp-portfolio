@@ -1,0 +1,132 @@
+.ie11 * {
+  min-width: 1px; }
+
+.ie11 body {
+  width: 100%; }
+  .ie11 body > * {
+    min-width: 1px; }
+
+.ie11 html {
+  width: 100%; }
+
+.ie11 html > * {
+  min-width: 1px; }
+
+.ie11 .banner-content-box {
+  width: 100%;
+  flex: 1 0 auto;
+  align-self: stretch; }
+
+.ie11 select:not([multiple]) {
+  background-image: none;
+  padding-right: 0px; }
+
+.ie11 .button {
+  max-width: 300px; }
+
+.ie11 .translation_cta .button, .ie11 .donate_now_cta .button {
+  margin: 0 auto; }
+
+.ie11 .item {
+  align-items: flex-start; }
+
+.ie11 .row {
+  width: 100%; }
+  .ie11 .row > * {
+    width: 100%; }
+
+.ie11 .banner-wrapper {
+  width: 100%; }
+
+.ie11 .columns-2,
+.ie11 .columns-3,
+.ie11 .columns-4,
+.ie11 .columns-5,
+.ie11 .columns-6,
+.ie11 .columns-7,
+.ie11 .columns-8,
+.ie11 .columns-9,
+.ie11 .columns-10,
+.ie11 .columns-11 {
+  flex-basis: 100%;
+  flex: 1 0 auto;
+  min-width: 1px;
+  min-height: 1px; }
+  .ie11 .columns-2 > *,
+  .ie11 .columns-3 > *,
+  .ie11 .columns-4 > *,
+  .ie11 .columns-5 > *,
+  .ie11 .columns-6 > *,
+  .ie11 .columns-7 > *,
+  .ie11 .columns-8 > *,
+  .ie11 .columns-9 > *,
+  .ie11 .columns-10 > *,
+  .ie11 .columns-11 > * {
+    flex: 1 0 auto;
+    flex-basis: 100%;
+    align-self: stretch; }
+
+.ie11 p {
+  width: 100%; }
+
+.ie11 .block-grid-2,
+.ie11 .block-grid-3,
+.ie11 .block-grid-4 {
+  width: 100%; }
+
+.ie11 .block-grid-2 > *,
+.ie11 .block-grid-3 > *,
+.ie11 .block-grid-4 > * {
+  flex: 1 0 auto;
+  flex-basis: 100%;
+  min-width: 1px; }
+
+.ie11 .block-grid-3 > * {
+  max-width: 30%; }
+
+.ie11 .accordion-label::after {
+  display: none; }
+
+.ie11 .accordion-holder {
+  width: 100%; }
+  .ie11 .accordion-holder .type {
+    text-align: right; }
+
+.ie11 .compat-object-fit {
+  background-size: cover;
+  background-position: center center; }
+  .ie11 .compat-object-fit img {
+    opacity: 0; }
+
+.ie11 .button {
+  width: 240px;
+  padding-top: 20px; }
+
+.ie11 .read-more {
+  width: 110px !important;
+  border: 0px solid white !important; }
+
+.ie11 .label {
+  max-width: auto;
+  width: auto; }
+
+.ie11 select::-ms-expand {
+  display: none; }
+
+.ie11 .compat-object-fit {
+  background-size: cover !important; }
+  .ie11 .compat-object-fit img {
+    display: none; }
+
+.ie11 .single-post-cat-list a, .ie11 .single-post-cat-list p {
+  width: auto;
+  text-align: left; }
+
+.ie11 .single-post-cat-list .divider {
+  width: 20px; }
+
+.ie11 .get_in_touch_form {
+  height: 900px; }
+
+.ie11 .single-map-wrapper .content-column > * {
+  max-height: 60px; }

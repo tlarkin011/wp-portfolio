@@ -1,0 +1,500 @@
+@mixin floating-posts() {
+    position: relative;
+    bottom: 0px;
+    transition: all .2s;
+
+    &:hover {
+        bottom: 10px;
+        box-shadow: 0px 20px 50px -20px rgba(0, 0, 0, 0.2) !important;
+    }
+}
+
+
+
+/////////////// ICON POSTS
+
+.icon-post-wrapper {
+    margin-bottom: 40px;
+
+
+
+    h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        max-width: 90%;
+        margin: 0 auto;
+        line-height: 30px;
+
+    }
+
+    .icon-post {
+
+        padding: 20px 20px 35px;
+        flex-direction: column;
+        min-width: 100px;
+        text-align: center;
+        background: $white;
+        margin-bottom: 30px;
+        justify-content:baseline;
+         box-shadow: 0px 20px 50px -20px rgba(0, 0, 0, 0.2) !important;
+        p {
+            text-align: center;
+            font-size:15px !important;
+                line-height: 24px;
+        }
+    }
+
+
+    img {
+        height: 100px;
+        width: auto;
+
+        margin-bottom: 20px;
+
+    }
+}
+
+.background-post-wrapper {
+    margin-top:80px;
+    margin-bottom:60px;
+    .content-component {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:200px;
+            padding-left:20px;
+            padding-bottom:0px;
+            padding-right:20px;
+            margin-bottom:120px;
+        }
+        .content-column {
+            background:$white;
+            padding:30px 20px 40px;
+            position: relative;
+            top:80px;
+            box-shadow: 0 22px 24px 0 rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            transition:all .2s;
+            &:hover {
+                top:60px;
+            }
+
+            h4,p,a  {
+                text-align: left;
+                margin:0px;
+            }
+            h4,p {
+                color:$black !important;
+            }
+            h4,a {
+                &:hover {
+                    color:$highlight;
+                }
+            }
+            a {
+                width:fit-content;
+            }
+
+        }
+
+                @media #{$below-tablet} {
+            min-width: 300px;
+        
+
+        h4 {
+            color: $light-highlight;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $white;
+        }
+
+        h4,
+        p,
+        a {
+            z-index: 10000;
+        }
+    }
+
+    @media #{$below-desktop} {
+        .background-post-loop {
+            @include columns-class(10);
+        }
+
+
+    }
+
+
+    @media #{$below-mini} {
+        .background-post-loop {
+            @include columns-class(11);
+        }
+    }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+///////////////////// STANDARD POSTS
+
+.blog-post-wrapper,
+.single-post {
+    margin-bottom: $bottom-spacer;
+
+    .blog-post-loop {
+      
+        align-items: center;
+    }
+
+    .image-column {
+        padding: 0px;
+        overflow: hidden;
+        height: fit-content;
+        max-height: 280px;
+ @include floating-posts();
+        img {
+            height: auto;
+            width:auto;
+            box-shadow: none !important;
+           
+        }
+    }
+
+    .content-column {
+        padding: 20px;
+
+        h3 {
+            padding-bottom: 10px;
+
+            &:hover {
+                color: $highlight;
+            }
+
+
+        }
+
+        p {
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .single-post-cat-list {
+            p {
+                width: unset;
+            }
+        }
+    }
+
+    .loop-content {
+        margin-bottom: $bottom-spacer;
+    }
+
+    @media #{$below-desktop} {
+        .blog-post-loop {
+            @include columns-class(11);
+
+            .content-column {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .single-post-cat-list {
+                p {
+                    width: unset;
+                }
+            }
+        }
+
+
+    }
+
+    @media #{$below-mini} {
+        .blog-post-loop {
+            justify-content: center;
+               @include columns-class(12);
+        }
+
+
+
+        .single-post-cat-list {
+            justify-content: center;
+
+        }
+    }
+}
+
+
+
+// Wide Posts
+
+.wide-post {
+    .loop-content {
+        display: flex;
+
+        .image-column {
+            
+            display: flex; 
+            justify-content: center;
+            padding-top:40px;
+            img {
+                margin:0 auto;
+                border-radius: 50%;
+                height:150px;
+                width:150px;
+     
+            }
+        }
+
+        .content-column {
+            padding: 20px;
+        }
+    }
+
+    @media #{$below-desktop} {
+        .loop-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .content-column {
+            @include columns-class(12);
+        }
+
+        .image-column {
+            @include columns-class(12);
+
+            img {
+                 height: auto;
+            width:auto;
+            }
+        }
+    }
+
+    @media #{$below-tablet} {
+         .loop-content {
+            align-items:center;
+        }
+        .content-column {
+            text-align: center;
+        }
+
+    }
+
+    .service-list {
+        list-style: none;
+        padding: 20px 10px 30px;
+    }
+}
+
+@mixin full-image {
+    .row {
+        max-width: 100vw;
+    }
+
+    .image-column {
+        @include columns-class(6);
+
+        @media #{$below-desktop} {
+            @include columns-class(12);
+
+        }
+    }
+}
+
+@mixin standard-content {
+    img {
+        height: auto;
+            width:auto;
+    }
+
+    h3 {
+        color: $highlight;
+    }
+}
+
+@mixin left-full-image {
+    .content-column {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+// Reverse Direction Content Blocks
+
+@mixin right-full-image {
+    .row {
+        flex-direction: row-reverse;
+    }
+
+    .content-column {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@mixin right-standard {
+    .row {
+        flex-direction: row-reverse;
+    }
+}
+
+
+// Basic Layout
+
+
+.right_content_full_image {
+    @include full-image();
+    @include right-full-image();
+}
+
+.right_content_standard_image {
+    @include right-standard();
+
+}
+
+.left_content_standard_image {}
+
+.left_content_full_image {
+    @include full-image();
+    @include left-full-image();
+}
+
+
+
+
+
+
+
+
+
+
+/////////////  FULL WIDTH FEATURE WRAPPER 
+
+.full-width-feature-wrapper {
+    margin-bottom: $bottom-spacer;
+
+    .loop-content {
+        @include fluid-prop(padding-top, 100, 40);
+        @include fluid-prop(padding-bottom, 60, 10);
+        @include fluid-prop(padding-left, 40, 20);
+        @include fluid-prop(padding-right, 40, 20);
+
+        text-align: center;
+        box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .2);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .single-post-cat-list {
+        justify-content: center;
+    }
+
+    .grid-wrapper {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: "grid1 grid1 grid2 grid2""grid1 grid1 grid2 grid2""grid1 grid1 grid3 grid3""grid1 grid1 grid3 grid3";
+
+        @media #{$below-tablet} {
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "grid1 grid1""grid2 grid2""grid3 grid3";
+
+            .grid3,
+            .grid2 {
+                @include fluid-prop(padding-top, 400, 60);
+                @include fluid-prop(padding-bottom, 60, 40);
+                @include fluid-prop(padding-left, 40, 20);
+                @include fluid-prop(padding-right, 40, 20);
+            }
+        }
+
+        .grid1 {
+            height: 100%;
+            grid-area: grid1;
+            background-size: cover;
+            @include fluid-prop(padding-top, 400, 60);
+            @include fluid-prop(padding-bottom, 60, 40);
+            @include fluid-prop(padding-left, 40, 20);
+            @include fluid-prop(padding-right, 40, 20);
+        }
+
+        .grid3 {
+            height: 100%;
+            grid-area: grid3;
+            background-size: cover;
+        }
+
+        .grid2 {
+            height: 100%;
+            grid-area: grid2;
+            background-size: cover;
+        }
+    }
+}
+
+
+.single-post-cat-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .divider {
+        height: 10px;
+        width: 13px;
+        transform: rotate(90deg);
+        border-bottom: 1.5px solid $highlight;
+        margin: 8px;
+        margin-top: 7px;
+        margin-right: -2px;
+        padding: 0;
+    }
+
+    p,
+    a {
+        color: $highlight;
+        font-size: 11px !important;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    a {
+        &:hover {
+            color: $black;
+        }
+    }
+
+    .post-date {
+        margin-left: 10px;
+    }
+}
+
+.unlinked-post {
+    .content-column {
+        h3 {
+            &:hover {
+                color: $maintext;
+            }
+        }
+    }
+}

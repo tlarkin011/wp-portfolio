@@ -1,0 +1,135 @@
+/*
+ |----------------------------------------------------------------
+ |  Site Page Content
+ |----------------------------------------------------------------
+ */
+ .site-content {
+  @include padding-top(50, 30);
+  @include padding-bottom(50, 30);
+}
+
+    .white {
+        p,h1,h2 {
+            color:$white;
+        }
+    }
+    .black {
+        p,h1,h2 {
+            color:$black!important;
+        }
+    }
+
+
+.blue-background {
+  background:$lightest-blue;
+  padding-top:40px;
+  padding-bottom:40px;
+  margin-bottom:40px;
+}
+/*
+ |----------------------------------------------------------------
+ |  Site Single Entry
+ |----------------------------------------------------------------
+ */
+ .entry-content {
+
+ }
+ .info-block {
+  padding:40px;
+  background-color:$light-grey;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.entry-title {
+
+}
+.compat-object-fit {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  img {
+    opacity: 0;
+  }
+}
+
+
+/*
+ |----------------------------------------------------------------
+ |  Thank you / 404
+ |----------------------------------------------------------------
+ */
+
+ .page-template-_thank-you {
+  .site-main {
+    text-align: center;
+  }
+
+  .subscribe,
+  .get_in_touch {
+    text-align: center;
+  }
+}
+
+
+.error404 {
+  .column-center {
+    text-align: center;
+  }
+}
+
+
+
+.no-results {
+  padding: 60px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    position: relative;
+    max-width: 250px;
+
+    input {
+      max-height: 40px;
+      width: 100%;
+      border: 1px solid $highlight;
+      border-radius: 10px;
+      padding-bottom: 10px;
+
+    }
+
+    input::placeholder {
+      font-size: 15px;
+      font-style: italic;
+      color: $highlight;
+      opacity: 1;
+
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: none;
+    border: none;
+
+    i {
+      font-weight: 300;
+      color: $highlight;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.filter-section .filter-form-container .search-form select {
+  border:none;
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.12)
+}
+
+

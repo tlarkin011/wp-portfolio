@@ -1,0 +1,120 @@
+
+.filter-section {
+    z-index: 10;
+    padding:10px 0px;
+
+    .filter-container {
+        min-height:unset;
+        padding-top:0px;
+        padding-left:0px;
+        justify-content: flex-end;
+        padding-bottom:0px !important;
+    }
+    h6 {
+        padding-bottom: 0;
+        margin-right: 15px;
+        text-transform: uppercase;
+        min-width: 110px;
+        color: $highlight;
+    }
+
+    .view-all {
+        color: $maintext;
+        text-decoration: underline;
+    }
+
+    .filter-form-container {
+        &, .search-form, .flex-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .flex-container {
+            margin-right: 15px;
+            width: 100%;
+
+            .select-container {
+                margin-right: 15px;
+                min-width: 200px;
+            }
+        }
+        .taxonomy-select {
+
+        }
+        .search-form {
+            pointer-events: auto;
+            justify-content: space-between;
+            flex-basis: 100%;
+        
+            font-size:12px;
+            input {
+                height: 50px;
+                border-radius: 3px;
+            }
+
+            select, input[type="text"] {
+
+            }
+
+            select {
+                background-image: none;
+            }
+
+            .select-container {
+                background: $white;
+                position: relative;
+                border-radius: 6px;
+
+                i {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: $highlight;
+                    pointer-events: none;
+                }
+            }
+
+            .button {
+                margin-right: 15px;
+                min-width: 180px;
+                background:$highlight;
+                color:$white;
+                border:0px solid white !important;
+            }
+        }
+
+        .search-container {
+            min-width: 200px;
+        }
+    }
+
+    @media #{$below-max-width} {
+        .filter-form-container {
+            &, .search-form, .flex-container {
+                flex-wrap: wrap;
+            }
+            h6, a, .button, .select-container {
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+    @media #{$below-desktop} {
+        .filter-form-container {
+            .select-container {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
+
+
+.simple-filter-form {
+    h6 {
+        padding-bottom: 0;
+    }
+    form {
+        margin: 0;
+    }
+}

@@ -1,0 +1,150 @@
+@mixin full-image {
+    .row {
+        max-width: 100vw;
+    }
+    .image-column {
+        @include columns-class(6);
+
+          @media #{$below-desktop} {
+            @include columns-class(12);
+
+          }
+    }
+}
+@mixin standard-content {
+      img {
+             height: auto;
+            width:auto;
+        }
+         h3 {
+            color:$highlight;
+        }
+}
+@mixin left-full-image {
+    .content-column {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+// Reverse Direction Content Blocks
+
+@mixin right-full-image {
+    .row {
+        flex-direction:row-reverse;
+    }
+    .content-column {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@mixin right-standard {
+    .row {
+        flex-direction: row-reverse;
+    }
+}
+
+
+// Basic Layout
+
+
+.right_content_full_image {
+    @include full-image();
+    @include right-full-image();
+    .image-column {
+        padding:0px;
+    }
+
+}
+.right_content_standard_image {
+    @include right-standard();
+   
+}
+
+.left_content_full_image {
+    @include full-image();
+    @include left-full-image();
+    .image-column {
+        border-radius: 0px !important;
+        padding:0px;
+        img {
+            border-radius: 0px !important;
+        }
+    }
+}
+
+
+
+
+
+/*Standard 1.0 Style*/
+
+
+
+.left_content_standard_image {
+    @include standard-content();
+    @include mobile-content();
+          .content-column {
+            padding-top:80px;
+            padding-bottom:90px;
+            padding-left:10px;
+            padding-right:80px;
+
+        }
+        .image-column {
+            @include padding-top(100,0);
+            align-items:baseline;
+        }
+        img {
+            height:auto;
+        }
+
+}
+
+ .right_content_standard_image {
+       @include standard-content();
+       @include mobile-content();
+          .content-column {
+            padding-top:80px;
+            padding-bottom:90px;
+            padding-left:30px;
+            padding-right:80px;
+        }
+    }
+
+.left_content_full_image {
+        @include standard-content();
+        @include mobile-content();
+          .content-column {
+            padding-top:130px;
+            padding-bottom:190px;
+            padding-left:13%;
+            padding-right:80px;
+            flex-direction: column;
+            @media #{$below-max-width} {
+                padding-left:20px;
+            }
+        }
+}
+
+
+.right_content_full_image {
+        @include standard-content();
+        @include mobile-content();
+        .content-column {
+            padding-top:130px;
+            padding-bottom:190px;
+            padding-left:30px;
+            padding-right:13%;
+
+            @media #{$below-max-width} {
+                padding-right:20px;
+            }
+        }
+}
+
+
+
+
+
+

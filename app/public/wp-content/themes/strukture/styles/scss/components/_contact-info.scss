@@ -1,0 +1,158 @@
+@mixin contact-form-inputs($num, $width) {
+    .gform_fields {
+        display: flex;
+
+        li {
+            &:nth-of-type(-n+#{$num}) {
+                flex-basis: $width;
+            }
+
+        }
+    }
+}
+
+.single-map-wrapper {
+    @include padding-bottom(60);
+    @include padding-top(60);
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+}
+
+//field suite must be named this
+.get_in_touch_form {
+    >.row {
+        align-items: center;
+        flex-direction: column;
+
+        >div {
+            @include columns-class(8);
+
+            @media #{$below-tablet} {
+                @include columns-class(12);
+            }
+        }
+
+        .contact-form-container {
+            @include contact-form-inputs(5, 50%);
+
+            @media #{$below-mini} {
+                @include contact-form-inputs(5, 100%);
+            }
+        }
+    }
+}
+
+
+
+
+@media #{$below-desktop} {
+
+    .single-map-wrapper {
+        >div {
+            @include columns-class(12);
+        }
+
+        .map-column {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+
+
+
+
+.contact-container {
+    padding: 20px 20px 20px 60px;
+
+    @media #{$below-tablet} {
+        padding: 20px;
+
+        h4 {
+            text-align: center;
+        }
+
+    }
+
+
+    display: block;
+
+
+    h3 {
+        color: $black;
+        @include fluid-prop(margin-bottom, 40, 10);
+    }
+
+
+    h6 {
+        display: none;
+
+    }
+
+    .contact-item {
+        display: flex;
+        margin-bottom:10px;
+        @media #{$below-tablet} {
+            justify-content: center;
+        }
+
+        p,
+        a {
+           
+            color: $black;
+            font-size: 16px;
+            line-height: 25px;
+            padding-bottom: 10px;
+
+            @media #{$below-tablet} {
+                text-align: center;
+            }
+        }
+
+        a {
+            margin-bottom: 0px;
+            color: $black;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        i {
+            width: 20px;
+            color: $highlight;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+    }
+
+    .social-list {
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+            margin-top: 30px;
+        p {
+            margin-right: 10px;
+            color: $highlight;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.15px;
+            line-height: 29px;
+        }
+
+        li {
+            margin-right: 2px;
+        }
+
+        i {
+            font-size: 22px;
+            color: $highlight;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.home {
+    .services_overview {
+        @include fluid-prop(margin-bottom, 190, 40);
+    }
+
+    .treatment-block {
+        @include fluid-prop(margin-bottom, 90, 40);
+    }
+    .featured-testimonials  {
+    	 @include fluid-prop(margin-bottom, 90, 40);
+    }
+
+    .why-choose-wrapper {
+        @include fluid-prop(margin-bottom, 40, 40);
+
+        .content-component {
+            @include fluid-prop(margin-bottom, 40, 10);
+        }
+    }
+    .why_choose_us_intro {
+    	@include fluid-prop(margin-bottom, 0, 0);
+    }
+    .how_we_help_intro {
+        margin-bottom:40px;
+    }
+
+}
+
+.page-template-_how_it_works {
+    .stage_one, .stage_two {
+        margin-bottom:40px;
+    }
+    .stage_three {
+       @include fluid-prop(margin-bottom, 130, 40);
+    }
+    .persona_intro {
+         @include fluid-prop(margin-bottom, 40, 20);
+    }
+    .aspiring_owners,
+    .current_owners,
+    .students {
+          @include fluid-prop(margin-bottom, 80, 20);
+    }
+}
+
+
+.single-persona {
+    .overview {
+          @include fluid-prop(margin-bottom, 90, 40);
+    }
+    .benefits_intro {
+           @include fluid-prop(margin-bottom, 40, 40);
+    }
+}
+
+

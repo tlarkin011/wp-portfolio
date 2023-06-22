@@ -1,0 +1,42 @@
+.content-component {
+    
+ 
+    .image-column {
+            @include flex-center();
+
+        img {
+                height: auto;
+            width:auto;
+        }
+    }
+
+    @media #{$below-desktop} {
+       
+        div.row {
+            flex-direction: column-reverse;
+            justify-content:center;
+            align-items: center;
+        }
+        .columns-6 {
+            @include columns-class(10);
+            margin:0 auto;
+        }
+        .image-column {
+            width: 100%;
+            overflow: hidden;
+        }
+        .content-column {
+            justify-content:center;
+    
+        }
+        
+    }
+     @media #{$below-tablet} {
+        .columns-6 {
+            @include columns-class(12);
+        }
+        .content-column {
+            text-align: center;
+        }
+    }
+}

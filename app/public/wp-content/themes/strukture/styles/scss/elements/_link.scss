@@ -1,0 +1,30 @@
+/*
+ |----------------------------------------------------------------
+ |  Link
+ |----------------------------------------------------------------
+ */
+a {
+    transition-duration: 250ms;
+    transition-property: background-color, color, border, opacity, text-indent;
+    text-decoration: none;
+    color: $highlight;
+    @include header();
+    
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+    }
+
+    p &,
+    ul:not([class]) &,
+    ol:not([class]) & {
+        border-bottom: 2px solid $light-grey;
+        opacity: 1;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+
+

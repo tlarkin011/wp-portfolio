@@ -1,0 +1,235 @@
+@media #{$below-mobile} {
+    .logo-column {
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .content-component {
+        .content-column p {
+            width: 100%;
+        }
+    }
+
+    .single-post-content {
+        text-align: center;
+    }
+
+    .hrs-link {
+        .button {
+            margin: 0 auto 20px auto;
+
+        }
+    }
+
+    .image-column {
+        padding: 0px;
+        img {
+            padding:10px;
+        }
+    }
+
+
+
+    .testimonials {
+        .image {
+            background: $lightest-blue;
+        }
+    }
+
+    .home .resources-wrapper .content-component {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    .footer-address-wrapper {
+        padding-top: 60px !important;
+    }
+
+
+
+    .highlights .highlights-grid>* {
+        margin: 0 auto 40px !important;
+    }
+
+    .cta-container {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            margin: 10px auto !important;
+        }
+    }
+
+    .single-item {
+        button {
+            display: none;
+        }
+
+        flex-direction:row;
+
+        img {
+            height: auto !important;
+        }
+    }
+
+    .strukture-wrapper {
+        .social-list {
+            margin: 0 auto;
+        }
+    }
+
+    .contact-container h3 {
+        text-align: center;
+    }
+
+    .page-template-_home {
+        .background_one {
+            height: 51% !important;
+            top: 9% !important;
+        }
+    }
+
+
+
+
+    .single-post-cat-list {
+        justify-content: flex-start!important;
+        a,
+        p {
+            font-size: 12px !important;
+        }
+    }
+
+    ol:not([class]) li,
+    ul:not([class]) li,
+    ul li {
+        text-align: left;
+    }
+
+    .page-template-_about {
+        .background_one {
+            height: 25% !important;
+        }
+
+        .background_two {
+            height: 25% !important;
+            top: 60% !important;
+        }
+    }
+
+    .background-post-wrapper .content-component {
+        padding-left: 10px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        margin-bottom: 80px;
+    }
+
+ 
+
+    .icon-post-wrapper .block-grid-3 .icon-post {
+
+        padding: 40px 30px 40px;
+    }
+
+    .featured-case-study-wrapper .content-column {
+        padding: 20px 10px;
+    }
+
+    .slideout-item .loop-hidden .close {
+        top: 5% !important;
+    }
+
+ 
+
+    .site-copyright {
+        text-align: center;
+    }
+
+    .address-column .social-list {
+        margin-top: 10px !important;
+    }
+
+    .site-footer .columns-12 {
+        padding-bottom: 0px !important;
+    }
+
+    .address-column h6 {
+        font-size: 17px !important;
+    }
+
+    .accordion-holder {
+        max-width: 98% !important;
+    }
+
+    .accordion-label:after {
+        right: -1px;
+    }
+
+    .loop-content {
+        padding: 0px;
+
+    }
+
+    .background-post-wrapper .content-column {
+        padding: 20px 10px;
+        top: 65px;
+    }
+
+    .slideout-item .loop-content {
+        min-height: 300px;
+    }
+
+
+    .home {
+        .background_one {
+            height: 21% !important;
+            top: 8.7% !important;
+        }
+    }
+
+    .featured-case-study-wrapper .image-column {
+        padding-top: 0;
+    }
+
+    .page-template-_how_it_works {
+        .background_two {
+            height: 23% !important;
+            top: 66%;
+        }
+
+        .background_one {
+            display: none !important;
+        }
+    }
+
+    .page-template-_contact {
+        .strukture-wrapper {
+            padding-top: 20px !important
+        }
+
+        .single-map-wrapper {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+
+            .contact-container {
+                padding: 0px 10px !important;
+
+                h3 {
+                    text-align: left !important;
+                }
+            }
+        }
+
+        .single-map-wrapper .map-column {
+            max-height: 400px !important;
+            overflow: hidden !important;
+        }
+    }
+  
+}

@@ -1,0 +1,102 @@
+/**
+ *	Global Placeholder
+================================================= */
+::placeholder { // autoprefix special
+
+}
+
+/**
+ *	Global Form Element
+================================================= */
+label {
+	@include font-size(15, 13);
+}
+
+[type="text"],
+[type="url"],
+[type="email"],
+[type="tel"],
+[type="number"],
+[type="password"],
+[type="search"],
+select,
+textarea {
+	transition-duration: .25s;
+	transition-property: background-color, color, border, opacity, transform;
+	box-shadow: none;
+	border-radius: none;
+	outline: none;
+	border: 1px solid $border;
+	background: white;
+	padding: 5px 10px;
+	height: 50px;
+	width: 100%;
+	appearance: none;
+
+	@include font-size(17, 15);
+	font-weight: $normal;
+	color: $maintext;
+
+	&:hover {
+
+	}
+
+	&:focus {
+    	outline: none;
+		border-color: $highlight;
+	}
+
+	&[disabled] {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+}
+
+textarea {
+	min-height: 150px;
+	padding: 10px;
+	resize: vertical;
+}
+
+select:not([multiple]) {
+	appearance: none;
+	padding-right: 35px;
+	background-image: url('../../images/select-icon.png');
+	background-position: calc( 100% - 10px ) center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+select[multiple] {
+	height: auto;
+}
+
+option {
+	padding: 5px 10px;
+	color: $maintext;
+}
+
+[type=submit],
+[type=button]{
+	@include button-style('default');
+}
+
+input[type="checkbox"],
+input[type="file"],
+input[type="image"],
+input[type="radio"] {
+	height: auto;
+	width: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	line-height: normal;
+	padding: 0;
+	vertical-align: middle;
+
+	+ label {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

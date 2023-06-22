@@ -1,0 +1,101 @@
+/*
+ |----------------------------------------------------------------
+ |  Buttons
+ |----------------------------------------------------------------
+ */
+.button {
+    @include button();
+
+    &.default {
+        @include button-style('default');
+    }
+}
+
+
+/*
+ |----------------------------------------------------------------
+ |  Button Base/Mixin
+ |----------------------------------------------------------------
+ */
+
+
+
+@mixin button-one {
+    color: white;
+    background:$highlight;
+  
+    &:hover {
+         background:$light-highlight !important;
+         color:$highlight;
+
+    }
+}
+
+@mixin button-two {
+    color: white;
+  
+    
+    &:hover {
+         background:$white !important;
+         color:$highlight;
+    }
+}
+
+@mixin button-three {
+    color: white !important;
+    background:unset !important;
+    border:1px solid $white!important;
+    
+    &:hover {
+         background:$white !important;
+         color:$grey !important;
+    }
+}
+
+
+
+.two {
+    @include button-two();
+    border-bottom:0px solid $white !important;
+}
+
+.one {
+    @include button-one();
+    border-bottom:0px solid $white !important;
+}
+
+.three {
+    @include button-three();
+}
+
+@mixin read-more() {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    padding:0px;
+    min-width:unset;
+    min-height:unset;
+    font-weight:bold;
+    padding-bottom:3px;
+   transition:all .2s;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.86px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase!important;
+
+    &:hover {
+        color:$black !important;
+      
+      
+    }
+}
+
+.read-more {
+    @include read-more();
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+}

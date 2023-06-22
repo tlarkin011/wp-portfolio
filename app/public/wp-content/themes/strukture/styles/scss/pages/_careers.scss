@@ -1,0 +1,12 @@
+.page-template-_careers {
+	.culture_content {
+		@include fluid-prop(margin-bottom, 80, 40);
+	}
+	.highlights {
+		@include fluid-prop(margin-bottom, 60, 40);
+	}
+	.faq-postings {
+		@include fluid-prop(margin-bottom, 140, 40);
+	}
+	
+}

@@ -1,0 +1,83 @@
+.full_width_background_callout {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      @include overlay-color(rgba(0,0,0,.3));
+         z-index:0;
+    .row {
+        padding: 200px 0;
+        justify-content: flex-end;
+    }
+ 
+    h2 {
+        @include font-size(24);
+        color:$white !important;
+    }
+    p {
+         color:$white !important;
+    }
+
+    .content-column {
+        z-index: 10;
+        @include columns-class(5);
+    }
+
+    @media #{$below-desktop} {
+        .row {
+            padding: 100px 0;
+            justify-content: center;
+        }
+
+        .content-column {
+            text-align: center;
+            @include columns-class(11);
+        }
+    }
+}
+
+.centered_background_full {
+    background-size: cover;
+    background-color:$light-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+
+         z-index:0;
+    
+    h2 {
+        padding-bottom:30px;
+        color:$white;
+    }
+    
+    p {
+        width:90%;
+        margin:0 auto;
+        padding-bottom:30px;
+        color:$white;
+    }
+ 
+    .row {
+        @include padding-top(160,80);
+          @include padding-bottom(160,80);
+
+    }
+    .content-container {
+        @include columns-class(12);
+    }
+
+    h2,h3 {
+        &:hover {
+           
+        }
+    }
+}
+
+
+
+// Structure Style 1.0
+
+
+

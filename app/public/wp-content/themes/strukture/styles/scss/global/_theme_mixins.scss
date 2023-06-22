@@ -1,0 +1,165 @@
+/*
+ |----------------------------------------------------------------
+ |  Floating Animation
+ |----------------------------------------------------------------
+ */
+
+ @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+    // img {
+    //                 overflow: hidden;
+    //                 transform: translatey(0px);
+    //                 animation: float 4s ease-in-out infinite;
+    //             }
+
+
+
+
+
+
+
+
+    @mixin sick-underline($color, $height) {
+      &::after {
+        content: '';
+        background: $color;
+        display: block;
+        margin: 0 auto;
+        width: 0;
+        height: $height;
+        transition: all ease-in-out 0.3s;
+    }
+    &:hover {
+        opacity: 0.8;
+        &::after {
+          width: 100%;
+          transition: all ease-in-out 0.3s;
+      }
+  }
+}
+@mixin sans() {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin main-font() {
+    @include sans;
+}
+
+/*
+ |----------------------------------------------------------------
+ |  Animation
+ |----------------------------------------------------------------
+ */
+ @mixin hover-underline($color:$highlight) {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $color;
+    }
+    &:before {
+        opacity: 0;
+        transform: translateY(- $distance);
+        transition: transform 0s $easeOutBack, opacity 0s;
+    }
+    &:after {
+        opacity: 0;
+        transform: translateY($distance/2);
+        transition: transform $duration $easeOutBack, opacity $duration;
+    }
+    &:hover,
+    &:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &:before {
+            transition: transform $duration $easeOutBack, opacity $duration;
+        }
+
+        &:after {
+            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+        }
+    }
+
+}
+@mixin button() {
+    @include header();
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: center;
+    transition-duration: .2s;
+    transition-property: background-color, color, border, opacity;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border-radius: 6;
+    min-width: 200px;
+    min-height: 60px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: none;
+    outline: none;
+}
+
+@mixin button-style($style: 'default') {
+    @if $style == 'default' {
+        background-color: $highlight;
+    }
+}
+
+@mixin button-right() {
+    .banner-content-box {
+        display: flex;
+    }
+
+    .text-container {
+        @include columns-class(8);
+    }
+
+    .cta-column {
+        @include columns-class(4);
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+
+
+    }
+}
