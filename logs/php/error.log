@@ -37,3 +37,38 @@
 [08-Jun-2023 21:46:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_imagick.dll (The specified module could not be found.), C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found.)) in Unknown on line 0
 [08-Jun-2023 21:46:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_imagick.dll (The specified module could not be found.), C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found.)) in Unknown on line 0
 [08-Jun-2023 21:46:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_imagick.dll (The specified module could not be found.), C:/Users/trevo/AppData/Roaming/Local/lightning-services/php-7.4.30+5/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found.)) in Unknown on line 0
+[12-Jul-2023 18:48:43 UTC] Sync process for Gutenberg Blocks has started.
+[12-Jul-2023 18:48:43 UTC] CATEGORY:Importing categories..
+[12-Jul-2023 18:48:44 UTC] CATEGORY:Storing in option ast-block-templates-categories
+[12-Jul-2023 18:48:44 UTC] CATEGORY:Completed category import.
+[12-Jul-2023 18:48:44 UTC] BLOCK: Getting Total Blocks
+[12-Jul-2023 18:48:44 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/get-blocks-count/?page_builder=gutenberg&wireframe=yes
+[12-Jul-2023 18:48:44 UTC] BLOCK: Requests count 4
+[12-Jul-2023 18:48:44 UTC] BLOCK: Importing request 1 ..
+[12-Jul-2023 18:48:44 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=1&wireframe=yes
+[12-Jul-2023 18:48:44 UTC] BLOCK: Storing in option ast-block-templates-blocks-1
+[12-Jul-2023 18:48:44 UTC] BLOCK: Completed request 1
+[12-Jul-2023 18:48:44 UTC] BLOCK: Importing request 2 ..
+[12-Jul-2023 18:48:44 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=2&wireframe=yes
+[12-Jul-2023 18:48:44 UTC] BLOCK: Storing in option ast-block-templates-blocks-2
+[12-Jul-2023 18:48:44 UTC] BLOCK: Completed request 2
+[12-Jul-2023 18:48:44 UTC] BLOCK: Importing request 3 ..
+[12-Jul-2023 18:48:44 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=3&wireframe=yes
+[12-Jul-2023 18:48:44 UTC] BLOCK: Storing in option ast-block-templates-blocks-3
+[12-Jul-2023 18:48:44 UTC] BLOCK: Completed request 3
+[12-Jul-2023 18:48:44 UTC] BLOCK: Importing request 4 ..
+[12-Jul-2023 18:48:44 UTC] BLOCK: https://websitedemos.net/wp-json/astra-blocks/v1/blocks/?page_builder=gutenberg&per_page=100&page=4&wireframe=yes
+[12-Jul-2023 18:48:44 UTC] BLOCK: Storing in option ast-block-templates-blocks-4
+[12-Jul-2023 18:48:44 UTC] BLOCK: Completed request 4
+[12-Jul-2023 18:48:44 UTC] SITE: Getting Total Sites
+[12-Jul-2023 18:48:44 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/get-total-pages/?page_builder=gutenberg
+[12-Jul-2023 18:48:44 UTC] SITE: Request count 2
+[12-Jul-2023 18:48:44 UTC] SITE: Importing request 1 ..
+[12-Jul-2023 18:48:44 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=1&page-builder=gutenberg
+[12-Jul-2023 18:48:45 UTC] SITE: Storing in option ast-block-templates-sites-1
+[12-Jul-2023 18:48:45 UTC] SITE: Completed request 1
+[12-Jul-2023 18:48:45 UTC] SITE: Importing request 2 ..
+[12-Jul-2023 18:48:45 UTC] SITE: https://websitedemos.net/wp-json/astra-sites/v1/sites-and-pages/?per_page=100&page=2&page-builder=gutenberg
+[12-Jul-2023 18:48:45 UTC] SITE: Storing in option ast-block-templates-sites-2
+[12-Jul-2023 18:48:45 UTC] SITE: Completed request 2
+[12-Jul-2023 18:48:45 UTC] Sync process for Gutenberg Blocks is done.
